@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Rio 200 Graus</title>
+		<meta charset="UTF-8"/>
+		<base target="_blank"> <!-- faz abrir links em nova página -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"> <!-- carrega o arquivo de estilos -->
+		<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'> <!-- carrega a fonte Stoke -->
+		<script type="text/javascript" src="javascript/estoque.js"></script>
+	</head>
+
+	<body> 
+		<header>
+			<img src="imagens/Rio200deitado.png" alt="Rio 200 graus | Forno e Fogão" class="imgLogo"> <!-- logo canto superior esquerdo -->
+
+			<!-- endereço da loja -->
+			<address class="ender"> 
+				Avenida Atacama, 200 <br/>
+				Tel: (21) 98765-4321 <br/>
+				<a href="mailto:contato@hotashell.com.br">contato@hotashell.com.br</a>
+			</address>
+		</header>
+		<!-- linha do conteúdo e menu -->
+		<nav>
+			<!-- lista numerada do menu de navegação -->
+			<ul>
+				<li><a href="Rio200graus.html">Inicial</a></li>
+				<li><a href="Tipos.html">Tipos</a></li>
+				<li><a href="Estoque.html">Estoque</a></li>
+				<li><a href="Cadastro.html">Cadastro</a></li>
+				<li><a href="Compras.html">Compras</a></li>
+			</ul>
+		</nav>
+
+		
+		<!-- conteúdo da página -->
+		<section>
+			<table class="tabInfo">
+				<tr>
+					<th colspan="3" class="titulo">Fogão & Forno</th>
+				</tr>
+				<tr>
+					<th class="linTH">Tipo</th>
+					<th class="linTH">Modelo</th>
+					<th colspan="2" class="linTH">Imagem/Preço</th>
+				</tr>
+				<tr>
+					<th rowspan="3" class="colTH">Fogão</th>
+					<td><a target="_self" href="javascript:trocaImagem(0)">Brastemp de piso 4 bocas</a></td>
+					<th rowspan="5"><img class="imgPopup" id="fotoFogao" src="imagens/Vazio.jpg"/>
+					<div id="precoFogao" class="preco">&nbsp;</div></th>
+				</tr>
+				<tr>
+					<td><a target="_self" href="javascript:trocaImagem(2)">Electrolux de piso 4 bocas</a></td>
+				</tr>
+				<tr>
+					<td><a target="_self" href="javascript:trocaImagem(1)">Brastemp de piso 6 bocas</a></td>
+				</tr>
+				<tr>
+					<th rowspan="2" class="colTH">Forno</th>
+					<td><a target="_self" href="javascript:trocaImagem(3)">Philco Elétrico 46L</a></td>
+				</tr>
+				<tr>
+					<td><a target="_self" href="javascript:trocaImagem(4)">Itajobi à gás 56L</a></td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>

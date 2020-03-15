@@ -1,0 +1,295 @@
+/* ESTILO GERAL DO SITE */
+
+/* estilo do corpo do documento */
+body {
+	background-color: #FFDD55;
+	color: #FF1111;
+	font-size: 16px;
+	font-family: Stoke, Verdana, Liberation;
+}
+
+/* definição do estilo dos links */
+a {
+	text-decoration: none;	
+}
+
+a:link {
+	color: #DD0000;
+}
+
+a:visited {
+	color: #CC0000;
+}
+
+
+/* definição do estilo das listas em geral */
+ol, ul {
+	line-height: 200%;
+}
+
+/* definição do estilo de listas não numeradas */
+ul {
+	list-style-type: disc;
+}
+
+
+/* estilo de lista não numerada no interior da tag nav */
+nav ul {
+	color: #883322;
+	line-height: 230%;
+	margin-top: 40px;
+}
+
+/*************************************/
+/* ESTILO DAS SEÇÕES */
+
+/* estilo do cabeçalho */
+header {
+	display: block;
+	margin-bottom: 1px;
+	}
+
+/* estilo do menu de navegação */
+nav {
+	display: block;
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+	font-family: Stoke, Verdana, Liberation;
+}
+
+/* estilo da parte principal dos documentos */
+section {
+	display: block;
+	width: 76%;
+	float: right;
+	}
+
+/***********************************/
+/* ESTILO DAS CLASSES DA PÁGINA INICIAL*/
+
+/* estilo da classe dos endereços */
+.ender {
+	text-align: right;
+	font-size: 15px;
+	line-height: 140%;
+	float: right;
+}
+
+
+/* estilo referente a imagem de logotipo do canto superior esquerdo */
+.imgLogo {
+	border-bottom: solid;
+	border-width: 3px;
+	margin-bottom: 6px;
+	padding-bottom: 15px;
+}
+
+
+/* estilo do texto e imagem de apresentação da home Rio200graus */
+.apres {
+	text-align: center;
+	font-size: 18px;
+}
+
+/*********************************/
+/* ESTILOS DA PÁGINA DE TIPOS */
+
+/* estilo da lista principal da página Tipos */
+.listaTipos {
+	color: #AA0000;
+	background-color: #EECC88;
+	padding: 10px 10px 10px 50px;
+	margin: 30px 10px 10px 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000055;
+	width:70%;
+}
+
+
+/* estilo da de lista não numerada dentro da classe listaTipos */
+.listaTipos ul {
+	color: #AA0000;
+	list-style: circle;
+}
+
+/************************************/
+/* ESTILOS DA PÁGINA DE ESTOQUE */
+
+/*estilos da tabela da página Estoque */
+table.tabInfo {
+	border-collapse: collapse;
+	margin-top: 6px;
+	background-color: #EECC88;
+	color: #000066;
+	font-family: Arial, Ubuntu;
+}
+
+/* estilo das celulas dentro da classe tabInfo */
+table.tabInfo td,th {
+	border-width: 3px;
+	border-style: solid;
+	border-color:  #226699;
+	padding: 6px 12px 6px 12px;
+}
+
+/* estilos dos titulos */
+th.titulo {
+	color: #FFFF22;
+	background-color: #449977;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* estilo da legenda de linha da classe linTH */
+th.linTH {
+	color: #FFFFFF;
+	background-color: #33AA66;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* estilos da legenda de classe colTH */
+th.colTH {
+	color: #FFFFFF;
+	background-color: #1188CC;
+	text-align: left;
+}
+
+
+/*estilos dos preços */
+.preco {
+	color: #FF0000;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+/*estilos das imagens nas células */
+td.imgCel {
+	background-color: #FFFFFF;
+}
+
+td.imgCel img {
+	width: 60px;
+	height: 60px;
+}
+
+/******************************************/
+/* ESTILOS DA PÁGINA DE CADASTRO */
+
+
+
+/*********fieldsets********/
+/*estilos dos campos de formulário */
+fieldset {
+	margin: 20px 10px 0px 10px;
+}
+
+/* estilo do fieldset colado a esquerda */
+fieldset.fsEsq {
+	float: left;
+	display: inline;
+	margin: 0px;
+}
+
+/*estilo do fieldset colado a direita */
+fieldset.fsDir {
+	float: right;
+	display: inline;
+	margin: 0px;
+}
+
+/*********elementos do formulário*********/
+/*estilo dos botoes */
+
+div.botoes {
+	text-align: right;
+	margin: 20px 10px 0px 10px;
+}
+/* delimita uma linha do formulário */
+div.divLinha {
+	width: 480px;
+	margin-bottom: 6px;
+}
+
+/*primeira coluna grudada a esquerda */
+label.colPri {
+	float: left;
+	display: block;
+	width: 90px;
+}
+
+/*elemento colado a direita do formulário */
+.elemDir {
+	float: right;
+	display: block;
+}
+
+/*******tamanhos********/
+/*input de tamanho grande */
+.inpGrande {
+	width: 370px;
+}
+
+/*input de tamanho médio */
+input.inpMedio {
+	width: 120px;
+}
+
+/* input de dois digitos da data */
+input.numDD {
+	width: 30px;
+}
+
+/*input de 4 dígitos do ano */
+input.numQD {
+	width: 50px;
+}
+
+/**********************************************/
+/* ESTILOS DA PÁGINA DE COMPRAS */
+
+/* fieldset colado a esquerda da página compras */
+fieldset.fsEsqCompras {
+	float: left;
+	display: inline;
+}
+
+/*fieldset colado a direita da página compras */
+fieldset.fsDirCompras {
+	float: right;
+	display: inline;
+}
+
+/* bloco que delimita a linha do fomulário da página de compras */
+.linhaCompras {
+	width: 500px;
+	margin-bottom: 6px;
+}
+
+/* label da primeira coluna grudada a borda esquerda do formulário */
+.colPriCompras {
+	float: left;
+	display: block;
+	width: 86px;
+}
+
+/* input do campo de e-mail */
+.inpEmail {
+	width: 200px;
+}
+
+/* Classes da Popup da página TIPOS */
+
+.imgPopup {
+	width: 160px;
+	height: 160px;
+	border: solid;
+	border-width: 3px;
+	padding: 12px;
+	background-color:#FFF;
+	border-color:#226699;
+}

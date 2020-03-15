@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Rio 200 Graus</title>
+		<meta charset="UTF-8"/>
+		<base target="_blank"> <!-- faz abrir links em nova página -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"> <!-- carrega o arquivo de estilos -->
+		<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'> <!-- carrega a fonte Stoke -->
+		<script type="text/javascript" src="javascript/cadastro.js"></script>
+	</head>
+
+	<body> 
+		<header>
+			<img src="imagens/Rio200deitado.png" alt="Rio 200 graus | Forno e Fogão" class="imgLogo"> <!-- logo canto superior esquerdo -->
+
+			<!-- endereço da loja -->
+			<address class="ender"> 
+				Avenida Atacama, 200 <br/>
+				Tel: (21) 98765-4321 <br/>
+				<a href="mailto:contato@hotashell.com.br">contato@hotashell.com.br</a>
+			</address>
+		</header>
+		<!-- linha do conteúdo e menu -->
+		<nav>
+			<!-- lista numerada do menu de navegação -->
+			<ul>
+				<li><a href="Rio200graus.html">Inicial</a></li>
+				<li><a href="Tipos.html">Tipos</a></li>
+				<li><a href="Estoque.html">Estoque</a></li>
+				<li><a href="Cadastro.html">Cadastro</a></li>
+				<li><a href="Compras.html">Compras</a></li>
+			</ul>
+		</nav>
+
+		<section id="cadastro">
+			<!-- conteúdo do documento -->
+			<h3>Cadastro</h3>
+			<form method="POST">
+				<fieldset>
+					<legend>Identificação</legend>
+					<div class="divLinha">
+						<label for="idEmail" class="colPri">E-mail:</label>
+						<input id="idEmail" type="email" name="email" class="inpGrande" required/>
+					</div>
+					<div class="divLinha">
+						<label for="idSenha" class="colPri">Senha:</label>
+						<input id="idSenha" type="password" name="senha" class="inpMedio" required/>
+						<div class="elemDir">
+							<label for="idConf">Confirme:</label>
+							<input id="idConf" type="password" name="senhaConf" class="inpMedio"required/>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+					<div class="divLinha">
+						<label class="colPri">Nome:</label>
+						<input type="text" name="nome" class="inpGrande" />
+					</div>
+
+					<div class="divLinha">
+						<label class="colPri">Endereço: </label>
+						<textarea name="TextoEnder" rows="2" class="inpGrande"></textarea>
+					</div>
+
+					<div class="divLinha">
+						<label class="colPri">Telefone:</label>
+						<input type="tel" name="Fixo" onchange="validaTel(this,8);" class="inpMedio" required/>
+
+						<div class="elemDir">
+							<label>Celular:</label>
+							<input type="tel" name="Celular" onchange="validaTel(this, 9);" class="inpMedio" />
+						</div>
+					</div>
+
+					<fieldset class="fsEsq">
+						<legend>Nascimento:</legend>
+						<input type="number" name="dia" min="1" max="31" class="numDD" />
+						<label>/</label>
+						<input type="number" name="mes" min="1" max="12" class="numDD" />
+						<label>/</label>
+						<input type="number" name="ano" min="1920" max="2000" class="numQD" />
+					</fieldset>
+
+					<fieldset class="fsDir">
+						<legend>Sexo:</legend>
+						<label>
+							<input type="radio" name="sexo" value="M" checked/>Masculino
+						</label>
+						<label>
+							<input type="radio" name="sexo" value="F"/>Feminino
+						</label>
+					</fieldset>
+				</fieldset>
+				
+				<div class="botoes">
+					<input type="submit" name="enviar" value="Enviar" />
+					<input type="reset" name="limpar" value="Apagar" />
+				</div>
+			</form>
+		</section>
+	</body>
+</html>

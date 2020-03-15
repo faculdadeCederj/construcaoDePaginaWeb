@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Rio 200 Graus</title>
+		<meta charset="UTF-8"/>
+		<base target="_blank"> <!-- faz abrir links em nova página -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css"> <!-- carrega o arquivo de estilos -->
+		<link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'> <!-- carrega a fonte Stoke -->
+		<script type="text/javascript" src="javascript/compras.js"></script>
+	</head>
+
+	<body> 
+		<header>
+			<img src="imagens/Rio200deitado.png" alt="Rio 200 graus | Forno e Fogão" class="imgLogo"> <!-- logo canto superior esquerdo -->
+
+			<!-- endereço da loja -->
+			<address class="ender"> 
+				Avenida Atacama, 200 <br/>
+				Tel: (21) 98765-4321 <br/>
+				<a href="mailto:contato@hotashell.com.br">contato@hotashell.com.br</a>
+			</address>
+		</header>
+		<!-- linha do conteúdo e menu -->
+		<nav>
+			<!-- lista numerada do menu de navegação -->
+			<ul>
+				<li><a href="Rio200graus.html">Inicial</a></li>
+				<li><a href="Tipos.html">Tipos</a></li>
+				<li><a href="Estoque.html">Estoque</a></li>
+				<li><a href="Cadastro.html">Cadastro</a></li>
+				<li><a href="Compras.html">Compras</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<!-- conteúdo do documento -->
+			<h3>Compras</h3>
+			<form method="POST">
+				<fieldset>
+					<legend>Identificação</legend>
+
+					<div class="linhaCompras">
+						<label class="colPriCompras" for="idEmail">E-mail:</label>
+						<input id="idEmail" class="inpEmail" type="email" name="email" required/>
+
+						<label class="elemDir">Senha:
+						<input class="inpMedio" type="password" name="senha" required/></label>
+					</div>
+
+					<div class="linhaCompras">
+						<b><i>Se você ainda não tem cadastro clique <a href="Cadastro.html">aqui</a></i></b>!
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Lista de Compras e Pagamento</legend>
+					<textarea class="elemDir" name="listaPedido" readonly cols="26" rows="14"></textarea>
+					<div class="linhaCompras">
+						Produtos:<br/>
+						<select name="selectProduto" id="selectProduto">
+							<option selected>-----</option>
+							<script type="text/javascript">
+								for (t=0; t < tipo.length; t++) {
+									document.write("<optgroup label='" + tipo[t] + "'/>");
+									for (i=0; i < info.length; i++) {
+										if (t == info[i][0]){
+											document.write("<option>" + info[i][1] + "</option>");
+										}
+									}
+								}
+
+							</script>
+						</select>
+						<input type="button" name="comprar" value="Comprar" onclick="compra(this.form);" />
+					</div>
+					<br/>
+					<fieldset class="fsEsq">
+						<legend>Dados do Cartão</legend>
+						<fieldset class="fsEsq">
+							<legend>Bandeira:</legend>
+								<label><input type="radio" name="bandeira" value="visa" checked/>Visa</label>
+								<label><input type="radio" name="bandeira" value="master"/>Master</label>
+								<label><input type="radio" name="bandeira" value="elo"/>Elo</label>
+						</fieldset>
+						<br/><br/><br/><br/>
+						<div>
+							<label class="colPriCompras" for="valMes">Validade:</label>
+							<input type="number" id="valMes" class="numDD" name="validade_dia" min="1" max="12"/> /
+							<input type="number" class="numQD" name="validade_ano" min="2019" max="2026"/>
+						</div>
+
+						<div>
+							<br/>
+							<label class="colPriCompras" for="numCartao">Número:</label>
+							<input id="numCartao" type="text" name="numero_cartao" size="20" />
+						</div>
+					</fieldset>
+					<br/><br/><br/><br/><br/><br/><br/><br/>
+					<label class="elemDir" for="idValor">Valor: R$
+					<input type="text" name="valor" readonly id="idValor" class="inpMedio" />
+					</label>
+				</fieldset>
+
+				<br/>
+				<div class="botoes">
+					<input type="submit" name="enviar" value="Enviar" />
+					<input type="reset" name="limpar" value="Apagar" />
+				</div>
+			</form>
+		</section>
+	</body>
+</html>
